@@ -48,6 +48,9 @@ img#qr-code {
   max-width: 120px;
 }
 @media (max-width:629px) {
+  body {
+    padding: 64px 32px;
+  }
   img#qr-code {
     display: none;
   }
