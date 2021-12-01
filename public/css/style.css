@@ -24,11 +24,12 @@ body {
 
 h1, p, a {
   font-size: 18px;
+  font-weight: 200;
+  letter-spacing: .4px;
 }
 
 h1 {
   color: rgba(255, 255, 255, .9);
-  font-weight: normal;
 }
 
 p {
@@ -37,6 +38,11 @@ p {
 
 a {
   color: rgba(255, 255, 255, .9);
+}
+
+a:hover {
+  color: rgba(255, 255, 255, 1);
+  transition: all .3s;
 }
 
 a.link-item {
@@ -68,4 +74,9 @@ img#qr-code {
 #pleasr-logo a img {
   display : block;
   margin : auto;
+  opacity: .5;
+}
+#pleasr-logo a:hover img {
+  transition: all .3s;
+  opacity: .9;
 }
