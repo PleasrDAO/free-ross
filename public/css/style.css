@@ -20,8 +20,6 @@ body {
 
 .wrapper {
   min-height: 100%;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
 }
 
 h1, p, a {
@@ -43,4 +41,9 @@ a {
 
 .footer {
   padding: 0 24px;
+}
+
+#pleasr-logo a img {
+  display : block;
+  margin : auto;
 }
