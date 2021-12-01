@@ -19,7 +19,7 @@ body {
 
 
 .wrapper {
-  min-height: 100%;
+  min-height: 85%;
 }
 
 h1, p, a {
@@ -39,8 +39,27 @@ a {
   color: rgba(255, 255, 255, .9);
 }
 
+a.link-item {
+  display: inline-block;
+  margin-right: 24px;
+}
+
+img#qr-code {
+  max-width: 120px;
+}
+@media (max-width:629px) {
+  img#qr-code {
+    display: none;
+  }
+  a.link-item {
+    display: block;
+    width: 90%;
+    margin-bottom: 24px;
+  }
+}
+
 .footer {
-  padding: 0 24px;
+  padding: 32px 0;
 }
 
 #pleasr-logo a img {
