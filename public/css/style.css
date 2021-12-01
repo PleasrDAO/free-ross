@@ -37,7 +37,8 @@ p {
 }
 
 a {
-  color: rgba(255, 255, 255, .9);
+  color: rgba(255, 255, 255, .8);
+  text-decoration: none;
 }
 
 a:hover {
