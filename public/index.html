@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FreeRossDAO</title>
+    <title>🕊 FreeRossDAO</title>
     <!-- <link rel="icon" href="/images/favicon-192.png" sizes="any"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,7 +52,7 @@
       <div class="centered">
         <button class="cta-button" id="contributeBtn" onClick="contributeNow()">Contribute now</button>
       </div>
-      <div id="contribution-block">
+      <div id="contribution-block" style="display: none;">
         <div class="centered"><b>Send your ETH contribution to freerossdao.eth, or directly to:</b></div>
         <div class="address">
           <input
@@ -157,10 +157,6 @@
         document.execCommand("copy");
         $("#copyAddressBtn").text("Copied!");
       }
-
-      $(document).ready(function() {
-        $('#contribution-block').hide();
-      })
 
       function contributeNow() {
         $('#contribution-block').show();
