@@ -86,6 +86,7 @@ input {
   padding: 12px;
   width: 70%;
   font-family: "Courier New", Courier, monospace;
+  text-overflow: ellipsis;
 }
 
 button {
