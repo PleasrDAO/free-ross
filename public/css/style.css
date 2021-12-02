@@ -158,6 +158,10 @@ button {
   cursor: pointer;
 }
 
+button:hover {
+  background-color: rgba(70, 70, 70, 1);
+}
+
 button.cta-button {
   font-size: 120%;
   padding: 24px;
