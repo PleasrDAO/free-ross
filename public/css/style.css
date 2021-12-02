@@ -233,3 +233,7 @@ button.cta-button {
   font-weight: bold;
   color: white;
 }
+
+#disclaimer-info {
+  margin-bottom: 100px;
+}
