@@ -42,6 +42,10 @@ p, li {
   line-height: 24px;
 }
 
+section {
+  padding-bottom: 24px;
+}
+
 ul {
   padding-inline-start: 0;
 }
