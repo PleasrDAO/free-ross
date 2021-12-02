@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FreeRossDAO</title>
+    <title>🕊 FreeRossDAO</title>
     <!-- <link rel="icon" href="/images/favicon-192.png" sizes="any"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -153,16 +153,20 @@
 
     <script>
       function copyAddress() {
+        if (window.plausible) {
+          window.plausible('copyAddress.click')
+        }
+
         $("#walletAddress").select();
         document.execCommand("copy");
         $("#copyAddressBtn").text("Copied!");
       }
 
-      $(document).ready(function() {
-        $('#contribution-block').hide();
-      })
-
       function contributeNow() {
+        if (window.plausible) {
+          window.plausible('contribute.click')
+        }
+
         $('#contribution-block').show();
         $('#contributeBtn').hide()
       }
