@@ -19,7 +19,8 @@ body {
 }
 
 .wrapper {
-  min-height: 85%;
+  min-height: 100%;
+  padding-top: 24px;
 }
 
 h1,
