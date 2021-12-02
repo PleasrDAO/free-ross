@@ -200,6 +200,13 @@ button.cta-button {
 
 .footer {
   padding: 32px 0;
+
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #111111;
+  text-align: center;
 }
 
 #pleasr-logo a img {
