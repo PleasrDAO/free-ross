@@ -153,12 +153,20 @@
 
     <script>
       function copyAddress() {
+        if (window.plausible) {
+          window.plausible('copyAddress.click')
+        }
+
         $("#walletAddress").select();
         document.execCommand("copy");
         $("#copyAddressBtn").text("Copied!");
       }
 
       function contributeNow() {
+        if (window.plausible) {
+          window.plausible('contribute.click')
+        }
+
         $('#contribution-block').show();
         $('#contributeBtn').hide()
       }
