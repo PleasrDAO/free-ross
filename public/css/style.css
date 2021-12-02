@@ -223,3 +223,13 @@ button.cta-button {
   display: flex;
   justify-content: center;
 }
+
+.treasury-value-block {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+#treasury-value {
+  font-weight: bold;
+  color: white;
+}

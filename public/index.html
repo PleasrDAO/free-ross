@@ -50,7 +50,10 @@
       </p>
       <p>Stand against injustice and Free Ross.</p>
       <div class="centered">
-        <button class="cta-button" id="contributeBtn" onClick="contributeNow()">Contribute now</button>
+        <button class="cta-button" id="contribution-btn" onClick="contributeNow()">Contribute now</button>
+      </div>
+      <div class="centered treasury-value-block">
+        <span>Current Treasury Balance: <span id="treasury-value">..........</span> ETH</span>
       </div>
       <div id="contribution-block">
         <div class="centered" id="contribution-tip">Send ETH contribution to freerossdao.eth, or directly to:</div>
@@ -152,6 +155,13 @@
     </footer>
 
     <script>
+
+      $(document).ready(function () {
+        $.getJSON('/api/treasury', function (data) {
+          $('#treasury-value').text(data.value)
+        })
+      });
+
       function copyAddress() {
         if (window.plausible) {
           window.plausible('copyAddress.click')
@@ -168,8 +178,9 @@
         }
 
         $('#contribution-block').show();
-        $('#contributeBtn').hide()
+        $('#contribution-btn').hide()
       }
+
     </script>
   </body>
 </html>
