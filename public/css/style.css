@@ -8,8 +8,9 @@ body {
   background-color: #111111;
   margin: 0 auto;
   padding: 64px;
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
   max-width: 540px;
   height: 100%;
 }
@@ -19,7 +20,6 @@ body {
 }
 
 .wrapper {
-  min-height: 100%;
   padding-top: 24px;
 }
 
@@ -33,13 +33,15 @@ a {
   letter-spacing: 0.1px;
 }
 
-h1, h2 {
+h1,
+h2 {
   color: rgba(255, 255, 255, 1);
   font-weight: 400;
   text-align: center;
 }
 
-p, li {
+p,
+li {
   line-height: 24px;
 }
 
@@ -56,6 +58,12 @@ li {
 }
 
 #contribution-info {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0;
+}
+
+#disclaimer-info {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0;
@@ -106,11 +114,15 @@ img#qr-code {
     flex-wrap: wrap;
   }
 }
-@media (max-width:399px) {
-  h1, h2, p, li, a {
+@media (max-width: 399px) {
+  h1,
+  h2,
+  p,
+  li,
+  a {
     font-size: 16px;
     font-weight: 300;
-    letter-spacing: .4px;
+    letter-spacing: 0.4px;
   }
 }
 
@@ -147,7 +159,7 @@ button {
   justify-content: center;
 }
 
-#etherscan{
+#etherscan {
   margin-right: 24px;
 }
 #gnosis {
