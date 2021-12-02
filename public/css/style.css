@@ -101,7 +101,6 @@ a:hover {
 img#qr-code {
   max-width: 120px;
   margin-bottom: 8px;
-  filter: invert(1);
 }
 
 @media (max-width: 629px) {
