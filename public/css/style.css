@@ -23,21 +23,37 @@ body {
 }
 
 h1,
+h2,
 p,
+li,
 a {
   font-size: 18px;
   font-weight: 300;
   letter-spacing: 0.4px;
 }
 
-h1 {
+h1, h2 {
   color: rgba(255, 255, 255, 1);
   font-weight: 400;
   text-align: center;
 }
 
-p {
+p, li {
   line-height: 24px;
+}
+
+ul {
+  padding-inline-start: 0;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+#contribution-info {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0;
 }
 
 a {
@@ -57,7 +73,9 @@ a:hover {
 
 img#qr-code {
   max-width: 120px;
+  margin-bottom: 8px;
 }
+
 @media (max-width: 629px) {
   body {
     padding: 64px 32px;
@@ -72,7 +90,7 @@ img#qr-code {
   } */
 }
 @media (max-width:399px) {
-  h1, p, a {
+  h1, h2, p, li, a {
     font-size: 16px;
     font-weight: 300;
     letter-spacing: .4px;
