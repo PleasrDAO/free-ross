@@ -33,6 +33,7 @@ a {
 h1 {
   color: rgba(255, 255, 255, 1);
   font-weight: 400;
+  text-align: center;
 }
 
 p {
@@ -49,10 +50,10 @@ a:hover {
   text-decoration: underline;
 }
 
-a.link-item {
+/* a.link-item {
   display: inline-block;
   margin-right: 24px;
-}
+} */
 
 img#qr-code {
   max-width: 120px;
@@ -99,8 +100,13 @@ button {
 
 .link-list {
   padding: 32px 0;
+  display: flex;
+  justify-content: center;
 }
 
+#etherscan{
+  margin-right: 24px;
+}
 #gnosis {
   padding-left: 22px;
 }
