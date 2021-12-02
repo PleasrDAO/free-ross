@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  color: rgba(255, 255, 255, .4);
+  color: rgba(255, 255, 255, .5);
   background-color: #111111;
   margin: 0 auto;
   padding: 64px;
@@ -24,12 +24,13 @@ body {
 
 h1, p, a {
   font-size: 18px;
-  font-weight: 200;
+  font-weight: 300;
   letter-spacing: .4px;
 }
 
 h1 {
-  color: rgba(255, 255, 255, .9);
+  color: rgba(255, 255, 255, 1);
+  font-weight: 400;
 }
 
 p {
@@ -37,13 +38,13 @@ p {
 }
 
 a {
-  color: rgba(255, 255, 255, .8);
+  color: rgba(255, 255, 255, .9);
   text-decoration: none;
 }
 
 a:hover {
   color: rgba(255, 255, 255, 1);
-  transition: all .3s;
+  text-decoration: underline;
 }
 
 a.link-item {
