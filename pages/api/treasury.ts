@@ -19,6 +19,6 @@ export default async function handler(
   )
 
   res.status(200).json({
-    value: ethers.utils.formatEther(balance),
+    value: ethers.utils.commify(ethers.utils.formatUnits(balance.sub(balance.mod(1e15)))),
   })
 }
