@@ -71,6 +71,11 @@ li {
   margin-top: 24px;
 }
 
+#contribution-tip {
+  color: rgba(255, 255, 255, .9);
+  font-size: 14px;
+}
+
 #disclaimer-info {
   font-size: 12px;
   line-height: 16px;
