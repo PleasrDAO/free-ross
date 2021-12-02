@@ -96,6 +96,7 @@ button {
   border: 1px solid;
   border-color: rgba(255, 255, 255, 0.7);
   padding: 12px;
+  cursor: pointer;
 }
 
 .link-list {
