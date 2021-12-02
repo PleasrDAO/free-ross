@@ -69,6 +69,27 @@ img#qr-code {
   }
 }
 
+input {
+  color: rgba(255, 255, 255, .7);
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid;
+  border-color: rgba(102, 55, 55, 0.4);
+  padding: 12px;
+  width: 70%;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+button {
+  color: rgba(255, 255, 255, .9);
+  background-color: black;
+  border: 1px solid;
+  border-color: rgba(255,255,255,.7);
+  padding: 12px;
+}
+
+.link-list {
+  padding: 32px 0;
+}
 .footer {
   padding: 32px 0;
 }
@@ -76,9 +97,9 @@ img#qr-code {
 #pleasr-logo a img {
   display : block;
   margin : auto;
-  opacity: .5;
+  opacity: .7;
 }
 #pleasr-logo a:hover img {
   transition: all .3s;
-  opacity: .9;
+  opacity: .95;
 }
