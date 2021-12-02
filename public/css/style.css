@@ -51,10 +51,10 @@ section {
 
 ul {
   list-style-type: square;
-  padding-inline-start: 0;
+  padding-inline-start: 20px;
 }
 ol {
-  padding-inline-start: 0;
+  padding-inline-start: 20px;
 }
 
 li {
@@ -251,5 +251,5 @@ button.cta-button {
 }
 
 #disclaimer-info {
-  padding-bottom: 12em;
+  padding-bottom: 6em;
 }
