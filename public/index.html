@@ -1,41 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FreeRossDAO</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- <link rel="icon" href="/images/favicon-192.png" sizes="any"> -->
-  <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FreeRossDAO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <link rel="icon" href="/images/favicon-192.png" sizes="any"> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
     <div>
-        <img src="img/qr-placeholder.png" id="qr-code" alt="">
+      <img src="img/qr-placeholder.png" id="qr-code" alt="" />
     </div>
     <div class="wrapper">
-        <h1>Free Ross.</h1>
-        <p>Ross Ulbricht founded Silk Road, introduced thousands to crypto, and received a disproportionate prison sentence of two lifetimes plus 40 years. Today we unite in solidarity for Ross, gathering funds to buy his  “GENESIS COLLECTION” NFTs, and protesting the injustice of the US prison and justice systems. 
-        </p>
-        <p>Stand against injustice and Free Ross. Contribute here:</p>
-        <div>
-            <input type="text" value="0xc102d2544a7029f7BA04BeB133dEADaA57fDF6b4" id="walletAddress">
-            <button onclick="copyAddress()">Copy Address</button>
-        </div>
-        <div class="link-list">
-            <!-- <a href="" class="link-item">Copy Address -></a> -->
-            <a href="" class="link-item" id="etherscan">Etherscan</a>
-            <a href="" class="link-item" id="gnosis">Gnosis Safe</a>
-        </div>
+      <h1>Free Ross.</h1>
+      <p>
+        Ross Ulbricht founded Silk Road, introduced thousands to crypto, and
+        received a disproportionate prison sentence of two lifetimes plus 40
+        years. Today we unite in solidarity for Ross, gathering funds to buy his
+        “GENESIS COLLECTION” NFTs, and protesting the injustice of the US prison
+        and justice systems.
+      </p>
+      <p>Stand against injustice and Free Ross. Contribute here:</p>
+      <div>
+        <input
+          type="text"
+          value="0xc102d2544a7029f7BA04BeB133dEADaA57fDF6b4"
+          id="walletAddress"
+        />
+        <button onclick="copyAddress()" id="copyAddressBtn">
+          Copy Address
+        </button>
+      </div>
+      <div class="link-list">
+        <!-- <a href="" class="link-item">Copy Address -></a> -->
+        <a href="" class="link-item">Etherscan</a>
+        <a href="" class="link-item">Gnosis Safe</a>
+      </div>
     </div>
 
     <footer class="footer">
-        <div id="pleasr-logo">
-            <a href="https://pleasr.org/" target="_blank">
-                <img src="img/PleasrDAO.svg">
-            </a>
-        </div>
+      <div id="pleasr-logo">
+        <a href="https://pleasr.org/" target="_blank">
+          <img src="img/PleasrDAO.svg" />
+        </a>
+      </div>
     </footer>
-</body>
+
+    <script>
+      function copyAddress() {
+        $("#walletAddress").select();
+        document.execCommand("copy");
+        $("#copyAddressBtn").text("Copied!");
+      }
+    </script>
+  </body>
+</html>
