@@ -62,10 +62,17 @@ img#qr-code {
   img#qr-code {
     display: none;
   }
-  a.link-item {
+  /* a.link-item {
     display: block;
     width: 90%;
     margin-bottom: 24px;
+  } */
+}
+@media (max-width:399px) {
+  h1, p, a {
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: .4px;
   }
 }
 
@@ -92,12 +99,10 @@ button {
   padding: 32px 0;
 }
 
-#etherscan::after {
-  content: "/";
-  margin-left: 32px;
-  color: rgba(255, 255, 255, .3);
-  text-decoration: none !important;
+#gnosis {
+  padding-left: 22px;
 }
+
 .footer {
   padding: 32px 0;
 }
