@@ -152,6 +152,7 @@ img#qr-code {
 
 .address input {
   margin-right: 0px;
+  border-radius: 4px 0px 0px 4px;
 }
 
 .address button {
@@ -159,6 +160,7 @@ img#qr-code {
   border-color: rgba(255, 255, 255, 0.4);
   border-style: solid;
   border-width: 1px;
+  border-radius: 0px 4px 4px 0px;
 }
 
 input {
