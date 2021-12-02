@@ -21,6 +21,7 @@ body {
 
 .wrapper {
   padding-top: 24px;
+  margin-bottom: 48px;
 }
 
 h1,
@@ -168,8 +169,10 @@ button:hover {
 
 button.cta-button {
   font-size: 120%;
-  padding: 24px;
+  padding: 16px;
   margin-top: 24px;
+  width: 100%;
+  border-radius: 4px;
 }
 
 .centered {
