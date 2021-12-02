@@ -28,35 +28,40 @@
         and justice systems.
       </p>
       <p>Stand against injustice and Free Ross.</p>
-      <p>Contribute here:</p>
-      <div class="address">
-        <input
-          type="text"
-          value="0xc102d2544a7029f7BA04BeB133dEADaA57fDF6b4"
-          id="walletAddress"
-        />
-        <button onclick="copyAddress()" id="copyAddressBtn">
-          Copy Address
-        </button>
+      <div class="centered">
+        <button class="cta-button" id="contributeBtn" onClick="contributeNow()">Contribute now</button>
       </div>
-      <div class="link-list">
-        <a
-          href="https://etherscan.io/address/0xc102d2544a7029f7BA04BeB133dEADaA57fDF6b4"
-          class="link-item"
-          id="etherscan"
-          target="_blank"
-          >Etherscan</a
-        >
-        <span>/</span>
-        <a
-          href="https://gnosis-safe.io/app/eth:0xc102d2544a7029f7BA04BeB133dEADaA57fDF6b4/balances"
-          class="link-item"
-          id="gnosis"
-          target="_blank"
-          >Gnosis Safe</a
-        >
+      <div id="contribution-block">
+        <div class="address">
+          <input
+            type="text"
+            value="0xc102d2544a7029f7BA04BeB133dEADaA57fDF6b4"
+            id="walletAddress"
+          />
+          <button onclick="copyAddress()" id="copyAddressBtn">
+            Copy Address
+          </button>
+        </div>
+
+        <div class="link-list">
+          <a
+            href="https://etherscan.io/address/0xc102d2544a7029f7BA04BeB133dEADaA57fDF6b4"
+            class="link-item"
+            id="etherscan"
+            target="_blank"
+            >Etherscan</a
+          >
+          <span>/</span>
+          <a
+            href="https://gnosis-safe.io/app/eth:0xc102d2544a7029f7BA04BeB133dEADaA57fDF6b4/balances"
+            class="link-item"
+            id="gnosis"
+            target="_blank"
+            >Gnosis Safe</a
+          >
+        </div>
+        <p id="contribution-info"><b>Only contributions in ETH on Ethereum mainnet will be eligible for the auction bid and subsequent pro-rata fraction distribution.</b> Do not send FreeRossDAO other assets. All other assets will be considered a donation to the DAO’s treasury—to be governed by FreeRossDAO—and are not eligible for pro-rata fractions. After the contribution period has been closed (block number to be announced), future ETH contributions sent in error up to 72 hours afterwards will be refunded in full, and are not eligible for pro-rata fractions.</p>
       </div>
-      <p id="contribution-info"><b>Only contributions in ETH on Ethereum mainnet will be eligible for the auction bid and subsequent pro-rata fraction distribution.</b> Do not send FreeRossDAO other assets. All other assets will be considered a donation to the DAO’s treasury—to be governed by FreeRossDAO—and are not eligible for pro-rata fractions. After the contribution period has been closed (block number to be announced), future ETH contributions sent in error up to 72 hours afterwards will be refunded in full, and are not eligible for pro-rata fractions.</p>
     </section>
 
     <section>
@@ -117,6 +122,15 @@
         $("#walletAddress").select();
         document.execCommand("copy");
         $("#copyAddressBtn").text("Copied!");
+      }
+
+      $(document).ready(function() {
+        $('#contribution-block').hide();
+      })
+
+      function contributeNow() {
+        $('#contribution-block').show();
+        $('#contributeBtn').hide()
       }
     </script>
   </body>
