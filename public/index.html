@@ -45,6 +45,7 @@
         years. Today we unite in solidarity for Ross, gathering funds to buy his
         <a href="https://superrare.com/artwork-v2/ross-ulbricht-genesis-collection-30841" target="_blank" rel="noopener noreferrer">Genesis Collection</a>, and protesting the injustices of the American prison system.
       </p>
+      <p id="auction-info">Blocks left in auction: ...</p>
       <p class="center-aligned white">Stand against injustice. Free Ross.</p>
       <div class="centered">
         <button class="cta-button" id="contribution-btn" onClick="contributeNow()">Contribute now</button>
@@ -175,6 +176,17 @@
         $.getJSON('/api/treasury', function (data) {
           $('#treasury-value').text(data.value)
         })
+        $.getJSON('/api/auction', function (data) {
+          const blocksLeft = data.value;
+          const ele = $('#auction-info');
+
+          if (blocksLeft > 0) {
+            ele.text("Blocks left in auction: " + blocksLeft.toLocaleString());
+          } else {
+            ele.text("Auction has ended. Please don't send additional contributions.");
+            $('#contribution-btn').hide();
+          }
+        })
       });
 
       function copyAddress() {
@@ -193,7 +205,7 @@
         }
 
         $('#contribution-block').show();
-        $('#contribution-btn').hide()
+        $('#contribution-btn').hide();
       }
 
     </script>
