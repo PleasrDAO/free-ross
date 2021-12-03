@@ -1,9 +1,8 @@
-import { ethers } from 'ethers';
 import type { NextApiRequest, NextApiResponse } from 'next'
 import { provider } from '../../lib/provider'
 
 type Data = {
-  value: string
+  value: number
 }
 
 export default async function handler(
