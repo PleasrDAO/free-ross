@@ -93,7 +93,8 @@ a:hover {
   text-decoration: underline;
 }
 
-p, li a::after {
+p,
+li a::after {
   content: " →";
 }
 
@@ -257,8 +258,20 @@ button.cta-button {
   padding-top: 1rem;
   padding-bottom: 0.5rem;
 }
+.bid-value-block {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.blocks-value-block {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
 
 #treasury-value {
+  font-weight: bold;
+  color: white;
+}
+#bid-value {
   font-weight: bold;
   color: white;
 }
