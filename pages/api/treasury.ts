@@ -46,7 +46,7 @@ export default async function handler(
     "public, s-maxage=15, stale-while-revalidate=30"
   );
 
-  bid = BigNumber.from(bid.toNumber() / 1.03);
+  bid = BigNumber.mul(100).div(103);
 
   res.status(200).json({
     value: fmt(display_bal),
