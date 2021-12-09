@@ -47,7 +47,7 @@
       </p>
       <p class="center-aligned white">Stand against injustice. Free Ross.</p>
       <div class="centered">
-        <button class="cta-button" id="contribution-btn" onClick="contributeNow()">Contribute now</button>
+        <button class="cta-button" id="contribution-btn" onClick="">WE WON THE AUCTION</button>
       </div>
       <div class="centered treasury-value-block">
         <span>Current Treasury Balance: <span id="treasury-value">..........</span> ETH</span>
@@ -56,7 +56,7 @@
         <span>Last FreeRossDAO Bid: <span id="bid-value">..........</span> ETH</span>
       </div>
       <div class="centered blocks-value-block">
-        <span id="auction-info">Blocks left in auction: ..........</span>
+        <span id="auction-info">Blocks left in auction: 0</span>
       </div>
       <div id="contribution-block">
         <div class="centered" id="contribution-tip">Send ETH contribution to freerossdao.eth, or directly to:</div>
@@ -182,17 +182,6 @@
         $.getJSON('/api/treasury', function (data) {
           $('#treasury-value').text(data.value)
           $('#bid-value').text(data.bid)
-        })
-        $.getJSON('/api/auction', function (data) {
-          const blocksLeft = data.value;
-          const ele = $('#auction-info');
-
-          if (blocksLeft > 0) {
-            ele.text("Blocks left in auction: " + blocksLeft.toLocaleString());
-          } else {
-            ele.text("Auction has ended. Please don't send additional contributions.");
-            $('#contribution-btn').hide();
-          }
         })
       });
 
