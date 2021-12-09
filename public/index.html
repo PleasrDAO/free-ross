@@ -53,7 +53,7 @@
         <span>Current Treasury Balance: <span id="treasury-value">..........</span> ETH</span>
       </div>
       <div class="centered bid-value-block">
-        <span>Last FreeRossDAO Bid: <span id="bid-value">..........</span> ETH</span>
+        <span>Winning FreeRossDAO Bid: <span id="bid-value">1446</span> ETH</span>
       </div>
       <div class="centered blocks-value-block">
         <span id="auction-info">Blocks left in auction: 0</span>
@@ -181,7 +181,6 @@
       $(document).ready(function () {
         $.getJSON('/api/treasury', function (data) {
           $('#treasury-value').text(data.value)
-          $('#bid-value').text(data.bid)
         })
       });
 
