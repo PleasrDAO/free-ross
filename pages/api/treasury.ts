@@ -4,7 +4,6 @@ import { provider } from "../../lib/provider";
 
 type Data = {
   value: string;
-  bid: string;
 };
 
 const fmt = (bn: BigNumber) =>
